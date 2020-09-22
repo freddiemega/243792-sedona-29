@@ -58,6 +58,12 @@ img {
   max-width: 100%;
   height: auto;
 }
+/* Main container */
+.main-container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
 
 /* Main navigation */
 .main-navigation {
@@ -84,8 +90,7 @@ img {
 }
 /* Main */
 .container {
-  width: 1200px;
-  margin: 0 auto;
+  height: auto;
   background-color: var(--basic-white);
 }
 /* Slogan area */
@@ -96,15 +101,21 @@ img {
   font-family: "PT Sans Bold", Arial, sans-serif;
   font-size: 21px;
   line-height: 26px;
+  margin: 0;
+  padding: 0;
 }
 .slogan-area p {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
+  margin: 0;
+  padding: 0;
 }
 /* Features */
 .features ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .features li {
   text-align: center;
@@ -114,18 +125,24 @@ img {
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-white);
+  margin: 0;
+  padding: 0;
 }
 .features h4 {
   font-family: "PT Sans Bold", Arial, sans-serif;
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black);
+  margin: 0;
+  padding: 0;
 }
 .single-list-text p {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
   color: var(--basic-white);
+  margin: 0;
+  padding: 0;
 }
 .features-row-1,
 .features-row-3 {
@@ -154,21 +171,32 @@ img {
   line-height: 24px;
   color: var(--basic-black);
 }
-.search-area h2 {
+.search-area a {
   font-family: "PT Sans Bold", Arial, sans-serif;
   font-size: 21px;
   line-height: 26px;
   color: var(--basic-white);
   background-color: var(--basic-brown);
 }
+.search-area a:hover,
+.search-area a:focus {
+  color: var(--basic-white);
+  background-color: var(--basic-brown-dark);
+}
+.search-area a:active {
+  color: var(--basic-white);
+  background-color: var(--basic-brown-extradark);
+
+}
 /* Main footer */
 .page-footer {
   color: var(--basic-black);
   background-color: var(--basic-white);
   opacity: 0.9;
-  width: 1200px;
-  height: 120px;
-  margin: 0 auto;
+
+  min-height: 120px;
+  padding: 0;
+  margin: 0;
 }
 .footer-contacts a {
   color: var(--basic-black);
