@@ -1,0 +1,211 @@
+/* Fonts */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans'),
+  url('../fonts/ptsans.woff2') format('woff2'),
+  url('../fonts/ptsans.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'PT Sans Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSansBold'),
+  url('../fonts/ptsansbold.woff2') format('woff2'),
+  url('../fonts/ptsansbold.woff') format('woff');
+}
+
+/* Variables */
+:root {
+  --basic-black: #000000;
+  --basic-red: #ff0000;
+  --basic-blue: #81B3D2;
+  --basic-white: #ffffff;
+  --basic-brown: #766357;
+  --basic-grey: #333333;
+
+  --background-grey: #888888;
+  --background-grey-features: #eeeeee;
+
+  --basic-blue-dark: #669EC0;
+  --basic-blue-extradark: #5496BD;
+
+  --basic-brown-dark: #604E43;
+  --basic-brown-extradark: #503E33;
+
+}
+/* Global */
+body {
+  min-width: 1280px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-grey);
+  text-transform: uppercase;
+  background-color: var(--background-grey);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main navigation */
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+.site-navigation {
+  list-style: none;
+}
+.site-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: var(--basic-blue);
+}
+.site-navigation a:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+/* Main */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: var(--basic-white);
+}
+/* Slogan area */
+.slogan-area {
+  text-align: center;
+}
+.slogan-area h2 {
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+}
+.slogan-area p {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+}
+/* Features */
+.features ul {
+  list-style: none;
+}
+.features li {
+  text-align: center;
+}
+.features h3 {
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-white);
+}
+.features h4 {
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black);
+}
+.single-list-text p {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-white);
+}
+.features-row-1,
+.features-row-3 {
+  background-color: var(--basic-blue);
+}
+.features-row-4 {
+  background-color: var(--background-grey-features);
+}
+.features-row-4 h3 {
+  color: var(--basic-black);
+}
+/* Search area */
+.search-area {
+  background-color: var(--basic-white);
+  text-align: center;
+}
+.search-area-slogan {
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 24px;
+  color: var(--basic-black);
+}
+.search-description {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--basic-black);
+}
+.search-area h2 {
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-white);
+  background-color: var(--basic-brown);
+}
+/* Main footer */
+.page-footer {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  opacity: 0.9;
+  width: 1200px;
+  height: 120px;
+  margin: 0 auto;
+}
+.footer-contacts a {
+  color: var(--basic-black);
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+  color: var(--basic-blue);
+}
+.footer-contacts a:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+.footer-tag-link,
+.footer-phone-link {
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+}
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+/* Social button */
+
+.social-button {
+  color: inherit;
+  background-color: var(--basic-blue);
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: var(--basic-blue-dark);
+}
+.social-button:active {
+  background-color: var(--basic-blue-extradark);
+}
