@@ -191,7 +191,7 @@ img {
   background-color: var(--basic-brown-dark);
 }
 .search-area a:active {
-  color: var(--basic-white);
+  color: var(--link-white-03);
   background-color: var(--basic-brown-extradark);
 
 }
