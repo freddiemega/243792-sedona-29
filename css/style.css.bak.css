@@ -168,7 +168,7 @@ img {
 }
 /* Features */
 .features-list {
-
+  //display: grid;
 
 }
 .features-row-1 {
@@ -492,7 +492,7 @@ img {
 }
 .hotel-item {
   display: grid;
-  grid-template-columns: 73px 135px 29px 1fr 73px;
+  grid-template-columns: 73px 135px 1fr 200px 73px;
   grid-template-rows: 30px 1fr 30px;
   border-bottom: 1px solid var(--special-grey-line);
 }
@@ -501,54 +501,68 @@ img {
   grid-row: 2 / 3;
 }
 .hotel-description {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  padding-left: 29px;
+  display: grid;
+  grid-template-columns: min-content auto;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-column-gap: 6px;
+  justify-items: left;
+
+
+}
+.hotel-rating {
   grid-column: 4 / 5;
   grid-row: 2 / 3;
+  //text-align: right;
   display: grid;
-  grid-template-columns: 110px 142px 1fr 110px;
-  grid-template-rows: auto 30px 27px;
-  grid-column-gap: 6px;
-}
-.hotel-title {
-  grid-column: 1 / 4;
-  grid-row: 1 / 2;
-}
-.hotel-type {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-  margin: 0;
-  padding: 0;
-}
-.button-hotel-more {
-  grid-column: 1 / 2;
-  grid-row: 3 / 4;
-}
-.hotel-price {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-  margin: 0;
-  padding: 0;
-}
-.button-hotel-order {
-  grid-column: 2 / 3;
-  grid-row: 3 / 4;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
 }
 .rating-stars {
-  grid-column: -1 / -2;
-  grid-row: 1 / 2;
   margin: 0;
   padding: 0;
   text-align: right;
 }
 .rating-digits {
-  grid-column: -1 / -2;
-  grid-row: 3 / 4;
   margin: 0;
   padding: 0;
-  align-self: center;
-  text-align: center;
-  height: 27px;
+  text-align: right;
 }
+.hotel-title {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
 
+
+}
+.hotel-type {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  margin: 0;
+  align-self: center;
+
+
+}
+.button-hotel-more {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+
+
+}
+.hotel-price {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  margin: 0;
+  align-self: center;
+
+
+}
+.button-hotel-order {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+
+}
 .hotel-title h3 {
   font-family: "PT Sans Bold", Arial, sans-serif;
   font-size: 21px;
@@ -558,11 +572,11 @@ img {
   padding: 0;
   margin-top: -5px;
 }
-.hotel-title h3:hover,
-.hotel-title h3:focus {
+.hotel-title:hover,
+.hotel-title:focus {
   color: var(--basic-blue);
 }
-.hotel-title h3:active {
+.hotel-title:active {
   color: var(--basic-black);
   opacity: 0.3;
 }
