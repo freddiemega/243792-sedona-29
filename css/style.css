@@ -150,14 +150,22 @@ img {
 }
 /* Slogan area */
 .slogan-area {
-  text-align: center;
+  min-height: 216px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
 }
 .slogan-area h2 {
   font-family: "PT Sans Bold", Arial, sans-serif;
   font-size: 21px;
   line-height: 26px;
+  text-align: center;
+  max-width: 435px;
   margin: 0;
   padding: 0;
+  margin-top: 42px;
 }
 .slogan-area p {
   font-family: "PT Sans", Arial, sans-serif;
@@ -165,6 +173,7 @@ img {
   line-height: 26px;
   margin: 0;
   padding: 0;
+  margin-top: 20px;
 }
 /* Features */
 .features-list {
@@ -220,8 +229,11 @@ img {
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-white);
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  max-width: 151px;
+}
+.features-row-3 h3 {
+  word-spacing: 0.7px;
 }
 .features h4 {
   font-family: "PT Sans Bold", Arial, sans-serif;
@@ -249,6 +261,8 @@ img {
 }
 .features-row-4 h3 {
   color: var(--basic-black);
+  margin: 0 auto;
+  max-width: 150px;
 }
 
 .features-list-row-1,
@@ -281,7 +295,13 @@ img {
 /* Search area */
 .search-area {
   background-color: var(--basic-white);
-  text-align: center;
+  min-height: 291px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+
 }
 .search-area-slogan {
   font-family: "PT Sans Bold", Arial, sans-serif;
@@ -294,6 +314,9 @@ img {
   font-size: 14px;
   line-height: 24px;
   color: var(--basic-black);
+
+  text-align: center;
+  max-width: 435px;
 }
 .search-area a {
   font-family: "PT Sans Bold", Arial, sans-serif;
@@ -349,7 +372,8 @@ img {
   opacity: 0.3;
 }
 .footer-tag-link,
-.footer-phone-link {
+.footer-phone-link,
+.footer-contacts p {
   font-family: "PT Sans Bold", Arial, sans-serif;
   font-size: 21px;
   line-height: 26px;
@@ -366,6 +390,11 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 /* Social button */
 
