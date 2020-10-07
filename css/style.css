@@ -843,6 +843,9 @@ li.filter-option:last-child {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+.filter-input-checkbox:checked + label::before {
+  display: none;
+}
 .filter-input-checkbox:checked + label::after {
   content: "";
 
@@ -885,6 +888,9 @@ li.filter-option:last-child {
   background-image: url("../img/checkbox-disabled-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+.filter-input-checkbox:disabled:checked + label::before {
+  display: none;
 }
 .filter-infra-title,
 .filter-realty-title {
@@ -1286,4 +1292,7 @@ li.filter-option:last-child {
   background-image: url(../img/star.svg);
   display: block;
   margin-left: 4px;
+}
+.inner-page-footer {
+  position: static;
 }
