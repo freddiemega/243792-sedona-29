@@ -877,6 +877,10 @@ li.filter-option:last-child {
 .filter-realty-title {
   margin-bottom: 26px;
 }
+.filter-input-checkbox:focus + label {
+  outline: 1px dotted var(--basic-black);
+
+}
 .price-area {
   margin: 0;
   padding: 0;
@@ -984,6 +988,7 @@ li.filter-option:last-child {
 .range-controls .toggle:hover,
 .range-controls .toggle:focus {
   transform: scale(1.21);
+  outline: none;
 }
 
 .range-controls .toggle-min {
