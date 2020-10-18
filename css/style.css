@@ -224,6 +224,10 @@ img {
   max-width: 490px;
 }
 /* Features */
+.features {
+  z-index: 5;
+  position: relative;
+}
 .features-row-1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -442,19 +446,17 @@ a.search-button:active {
   min-height: 285px;
   padding: 55px;
   position: absolute;
-  top: 291px;
+  left: 316px;
   background-color: var(--basic-white);
   color: var(--basic-black);
   box-shadow: 0px 7px 15px var(--search-form-shadow);
 
   z-index: 3;
   display: block;
-  //animation: bounce-open 0.6s;
+  animation: bounce-open 0.6s;
 }
 .search-hotels-hide {
-  z-index: -1;
-  //top: -104px;
-  //display: block;
+
   animation: bounce-close 0.6s;
   transform: translateY(-395px);
 }
@@ -462,15 +464,6 @@ a.search-button:active {
   0% {
     transform: translateY(-395px);
   }
-
-  70% {
-    transform: translateY(-200px);
-  }
-
-  90% {
-    transform: translateY(-30px);
-  }
-
   100% {
     transform: translateY(0);
   }
@@ -479,26 +472,34 @@ a.search-button:active {
   0% {
     transform: translateY(0);
   }
-  20% {
-    transform: translateY(-30px);
-  }
-  40% {
-    transform: translateY(-50px);
-  }
-
-  60% {
-    transform: translateY(-100px);
-  }
-
-  80% {
-    transform: translateY(-200px);
-  }
-
   100% {
     transform: translateY(-395px);
   }
 }
+.search-hotels-error {
+  animation: shake 0.6s;
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
 
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-12px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(12px);
+  }
+}
 .search-form-container {
   min-height: 283px;
   margin: 0;
