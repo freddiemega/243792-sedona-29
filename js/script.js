@@ -35,14 +35,14 @@ buttonPlusChild.addEventListener('click', function (evt) {
 });
 
 function inc(nameInput) {
-  let fieldForChange = document.querySelector('[name=\"' + nameInput + '\"]');
+  var fieldForChange = document.querySelector('[name=\"' + nameInput + '\"]');
   if (parseInt(fieldForChange.value) >= 0 && parseInt(fieldForChange.value) < 99) {
   fieldForChange.value = parseInt(fieldForChange.value) + 1;
   }
 }
 
 function dec(nameInput) {
-  let fieldForChange = document.querySelector('[name=\"' + nameInput + '\"]');
+  var fieldForChange = document.querySelector('[name=\"' + nameInput + '\"]');
   if (parseInt(fieldForChange.value) > 0) {
     fieldForChange.value = parseInt(fieldForChange.value) - 1;
   }
@@ -50,10 +50,10 @@ function dec(nameInput) {
 
 
 //local storage
-const tripStartField = document.querySelector('[name="trip-start"]');
-const tripEndField = document.querySelector('[name="trip-end"]');
-const numberAdult = document.querySelector('[name="adults-quantity"]');
-const numberChild = document.querySelector('[name="childs-quantity"]');
+var tripStartField = document.querySelector('[name="trip-start"]');
+var tripEndField = document.querySelector('[name="trip-end"]');
+var numberAdult = document.querySelector('[name="adults-quantity"]');
+var numberChild = document.querySelector('[name="childs-quantity"]');
 
 var isStorageSupport = true;
 var storageNumberAdult = "";
@@ -70,7 +70,6 @@ if (storageNumberAdult && storageNumberChild) {
   numberAdult.value = storageNumberAdult;
   numberChild.value = storageNumberChild;
 }
-
 
 
 //form validation
