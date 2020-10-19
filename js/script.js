@@ -4,8 +4,10 @@ var formBlock = document.querySelector('.search-hotels-form');
 
 openFormButton.addEventListener('click', function (evt) {
   evt.preventDefault();
+  formBlock.classList.remove('search-hotels-error');
   formBlock.classList.toggle('search-hotels-hide');
 });
+
 
 //plus minus buttons
 var buttonMinusAdult = document.querySelector('.button-adults-minus');
@@ -32,14 +34,14 @@ buttonPlusChild.addEventListener('click', function (evt) {
 });
 
 function inc(nameInput) {
-  let fieldForChange = document.querySelector(`[name="${nameInput}"]`);
+  let fieldForChange = document.querySelector('[name=\"' + nameInput + '\"]');
   if (parseInt(fieldForChange.value) >= 0 && parseInt(fieldForChange.value) < 99) {
   fieldForChange.value = parseInt(fieldForChange.value) + 1;
   }
 }
 
 function dec(nameInput) {
-  let fieldForChange = document.querySelector(`[name="${nameInput}"]`);
+  let fieldForChange = document.querySelector('[name=\"' + nameInput + '\"]');
   if (parseInt(fieldForChange.value) > 0) {
     fieldForChange.value = parseInt(fieldForChange.value) - 1;
   }
@@ -59,19 +61,14 @@ var storageNumberChild = "";
 try {
   storageNumberAdult = localStorage.getItem("adults");
   storageNumberChild = localStorage.getItem("children");
-
 } catch (err) {
   isStorageSupport = false;
 }
 
-
-  if (storageNumberAdult && storageNumberChild) {
-    numberAdult.value = storageNumberAdult;
-    numberChild.value = storageNumberChild;
-    tripStartField.focus();
-  } else {
-    tripStartField.focus();
-  }
+if (storageNumberAdult && storageNumberChild) {
+  numberAdult.value = storageNumberAdult;
+  numberChild.value = storageNumberChild;
+}
 
 
 
@@ -82,8 +79,6 @@ formBlock.addEventListener("submit", function (evt) {
     formBlock.classList.remove('search-hotels-error');
     formBlock.offsetWidth = formBlock.offsetWidth;
     formBlock.classList.add('search-hotels-error');
-
-    console.log('ERROR');
   } else {
     if (isStorageSupport) {
       localStorage.setItem("adults", numberAdult.value);

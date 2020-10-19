@@ -428,15 +428,17 @@ ul.features-list-row-2 {
   align-items: center;
   flex-shrink: 0;
 }
-a.search-button:hover,
-a.search-button:focus {
+
+.search-button:hover,
+.search-button:focus {
   color: var(--basic-white);
   background-color: var(--basic-brown-dark);
 }
-a.search-button:active {
+.search-button:active {
   color: var(--link-white-03);
   background-color: var(--basic-brown-extradark);
 }
+
 /* Search Form */
 .search-hotels-form {
   font-family: "PT Sans Bold", Arial, sans-serif;
@@ -931,7 +933,6 @@ li.filter-option:last-child {
 }
 .filter-input-checkbox:focus + label {
   outline: 1px dotted var(--basic-black);
-
 }
 .price-area {
   margin: 0;
