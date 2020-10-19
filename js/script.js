@@ -6,6 +6,7 @@ openFormButton.addEventListener('click', function (evt) {
   evt.preventDefault();
   formBlock.classList.remove('search-hotels-error');
   formBlock.classList.toggle('search-hotels-hide');
+  openFormButton.blur();
 });
 
 
