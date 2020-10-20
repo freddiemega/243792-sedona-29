@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* Fonts */
 @font-face {
   font-family: 'PT Sans';
@@ -225,7 +232,7 @@ img {
   background-position:
     center bottom,
     center center;
-  background-color: var(--basic-white);
+  background-color: var(--basic-blue-dark);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -502,7 +509,7 @@ ul.features-list-row-2 {
   font-size: 21px;
   line-height: 26px;
   width: 568px;
-  height: 86px;
+  min-height: 86px;
   color: var(--basic-white);
   background-color: var(--basic-brown);
   display: -webkit-box;
@@ -516,6 +523,11 @@ ul.features-list-row-2 {
           align-items: center;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+.search-button p {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0;
 }
 .search-button:hover,
 .search-button:focus {
